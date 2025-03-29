@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "singularName": "client",
+    "pluralName": "clients",
+    "displayName": "Client"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::experience.experience"
+    }
+  }
+}

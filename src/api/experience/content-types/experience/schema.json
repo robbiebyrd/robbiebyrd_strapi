@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experiences",
+  "info": {
+    "singularName": "experience",
+    "pluralName": "experiences",
+    "displayName": "Experience",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "start": {
+      "type": "date"
+    },
+    "end": {
+      "type": "date"
+    },
+    "languages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::skill.skill"
+    },
+    "description": {
+      "type": "text"
+    },
+    "jobTitle": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "tools": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::skill.skill"
+    },
+    "color": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
