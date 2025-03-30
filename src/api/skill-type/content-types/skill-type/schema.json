@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skill_types",
+  "info": {
+    "singularName": "skill-type",
+    "pluralName": "skill-types",
+    "displayName": "Skill Type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sort": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

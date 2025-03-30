@@ -24,6 +24,14 @@
     },
     "description": {
       "type": "text"
+    },
+    "levelOfExpertise": {
+      "type": "string"
+    },
+    "skill_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::skill-type.skill-type"
     }
   }
 }
