@@ -463,6 +463,9 @@ export interface ApiExperienceExperience extends Struct.CollectionTypeSchema {
     start: Schema.Attribute.Date;
     subtitle: Schema.Attribute.String;
     summary: Schema.Attribute.Text;
+    Type: Schema.Attribute.Enumeration<
+      ['Part-Time', 'Full-Time', 'Volunteer', 'Freelance']
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -53,6 +53,15 @@
         "videos",
         "audios"
       ]
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Part-Time",
+        "Full-Time",
+        "Volunteer",
+        "Freelance"
+      ]
     }
   }
 }
