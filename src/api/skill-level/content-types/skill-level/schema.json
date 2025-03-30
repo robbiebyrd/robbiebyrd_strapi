@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skill_levels",
+  "info": {
+    "singularName": "skill-level",
+    "pluralName": "skill-levels",
+    "displayName": "Skill Level"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sort": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

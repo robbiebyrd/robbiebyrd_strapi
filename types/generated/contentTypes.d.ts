@@ -606,6 +606,35 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiSkillLevelSkillLevel extends Struct.CollectionTypeSchema {
+  collectionName: 'skill_levels';
+  info: {
+    displayName: 'Skill Level';
+    pluralName: 'skill-levels';
+    singularName: 'skill-level';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::skill-level.skill-level'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    sort: Schema.Attribute.Integer;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiSkillTypeSkillType extends Struct.CollectionTypeSchema {
   collectionName: 'skill_types';
   info: {
@@ -654,13 +683,16 @@ export interface ApiSkillSkill extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
-    levelOfExpertise: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::skill.skill'> &
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     relatedSkills: Schema.Attribute.Relation<'oneToMany', 'api::skill.skill'>;
+    skill_level: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::skill-level.skill-level'
+    >;
     skill_type: Schema.Attribute.Relation<
       'oneToOne',
       'api::skill-type.skill-type'
@@ -1225,6 +1257,7 @@ declare module '@strapi/strapi' {
       'api::client.client': ApiClientClient;
       'api::experience.experience': ApiExperienceExperience;
       'api::global.global': ApiGlobalGlobal;
+      'api::skill-level.skill-level': ApiSkillLevelSkillLevel;
       'api::skill-type.skill-type': ApiSkillTypeSkillType;
       'api::skill.skill': ApiSkillSkill;
       'api::work.work': ApiWorkWork;
