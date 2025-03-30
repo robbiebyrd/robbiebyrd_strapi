@@ -609,6 +609,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
 export interface ApiSkillTypeSkillType extends Struct.CollectionTypeSchema {
   collectionName: 'skill_types';
   info: {
+    description: '';
     displayName: 'Skill Type';
     pluralName: 'skill-types';
     singularName: 'skill-type';
@@ -620,6 +621,7 @@ export interface ApiSkillTypeSkillType extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    description: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -627,6 +629,7 @@ export interface ApiSkillTypeSkillType extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
+    plural: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     sort: Schema.Attribute.Integer;
     updatedAt: Schema.Attribute.DateTime;
