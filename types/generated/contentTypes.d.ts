@@ -553,7 +553,6 @@ export interface ApiExperienceExperience extends Struct.CollectionTypeSchema {
     description: Schema.Attribute.Text;
     end: Schema.Attribute.Date;
     jobTitle: Schema.Attribute.String;
-    languages: Schema.Attribute.Relation<'oneToMany', 'api::skill.skill'>;
     link: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -564,10 +563,10 @@ export interface ApiExperienceExperience extends Struct.CollectionTypeSchema {
     logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    skills: Schema.Attribute.Relation<'oneToMany', 'api::skill.skill'>;
     start: Schema.Attribute.Date;
     subtitle: Schema.Attribute.String;
     summary: Schema.Attribute.Text;
-    tools: Schema.Attribute.Relation<'oneToMany', 'api::skill.skill'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
