@@ -194,10 +194,6 @@ async function importGlobal() {
       favicon,
       // Make sure it's not a draft
       publishedAt: Date.now(),
-      defaultSeo: {
-        ...global.defaultSeo,
-        shareImage,
-      },
     },
   });
 }
