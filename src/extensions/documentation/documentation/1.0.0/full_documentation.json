@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-04-01T02:30:43.415Z"
+    "x-generation-date": "2025-04-02T23:57:48.104Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -5711,6 +5711,15 @@
                         }
                       }
                     },
+                    "color": {
+                      "type": "string"
+                    },
+                    "borderColor": {
+                      "type": "string"
+                    },
+                    "textColor": {
+                      "type": "string"
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -6895,6 +6904,15 @@
                       }
                     }
                   }
+                },
+                "color": {
+                  "type": "string"
+                },
+                "borderColor": {
+                  "type": "string"
+                },
+                "textColor": {
+                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
@@ -9110,6 +9128,15 @@
                           }
                         }
                       },
+                      "color": {
+                        "type": "string"
+                      },
+                      "borderColor": {
+                        "type": "string"
+                      },
+                      "textColor": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -9774,6 +9801,15 @@
                 ],
                 "example": "string or id"
               },
+              "color": {
+                "type": "string"
+              },
+              "borderColor": {
+                "type": "string"
+              },
+              "textColor": {
+                "type": "string"
+              },
               "locale": {
                 "type": "string"
               },
@@ -10273,6 +10309,15 @@
                     }
                   }
                 },
+                "color": {
+                  "type": "string"
+                },
+                "borderColor": {
+                  "type": "string"
+                },
+                "textColor": {
+                  "type": "string"
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -10351,6 +10396,15 @@
                 "type": "string"
               }
             }
+          },
+          "color": {
+            "type": "string"
+          },
+          "borderColor": {
+            "type": "string"
+          },
+          "textColor": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -12259,6 +12313,15 @@
                       }
                     }
                   }
+                },
+                "color": {
+                  "type": "string"
+                },
+                "borderColor": {
+                  "type": "string"
+                },
+                "textColor": {
+                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
