@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-04-02T23:57:48.104Z"
+    "x-generation-date": "2025-04-03T00:21:25.931Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -5338,6 +5338,15 @@
                         "description": {
                           "type": "string"
                         },
+                        "color": {
+                          "type": "string"
+                        },
+                        "textColor": {
+                          "type": "string"
+                        },
+                        "borderColor": {
+                          "type": "string"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -6530,6 +6539,15 @@
                       "type": "string"
                     },
                     "description": {
+                      "type": "string"
+                    },
+                    "color": {
+                      "type": "string"
+                    },
+                    "textColor": {
+                      "type": "string"
+                    },
+                    "borderColor": {
                       "type": "string"
                     },
                     "createdAt": {
@@ -8755,6 +8773,15 @@
                           "description": {
                             "type": "string"
                           },
+                          "color": {
+                            "type": "string"
+                          },
+                          "textColor": {
+                            "type": "string"
+                          },
+                          "borderColor": {
+                            "type": "string"
+                          },
                           "createdAt": {
                             "type": "string",
                             "format": "date-time"
@@ -9936,6 +9963,15 @@
                     "description": {
                       "type": "string"
                     },
+                    "color": {
+                      "type": "string"
+                    },
+                    "textColor": {
+                      "type": "string"
+                    },
+                    "borderColor": {
+                      "type": "string"
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -10950,6 +10986,15 @@
               "description": {
                 "type": "string"
               },
+              "color": {
+                "type": "string"
+              },
+              "textColor": {
+                "type": "string"
+              },
+              "borderColor": {
+                "type": "string"
+              },
               "locale": {
                 "type": "string"
               },
@@ -11025,6 +11070,15 @@
             "type": "string"
           },
           "description": {
+            "type": "string"
+          },
+          "color": {
+            "type": "string"
+          },
+          "textColor": {
+            "type": "string"
+          },
+          "borderColor": {
             "type": "string"
           },
           "createdAt": {
@@ -11337,6 +11391,15 @@
                   "type": "string"
                 },
                 "description": {
+                  "type": "string"
+                },
+                "color": {
+                  "type": "string"
+                },
+                "textColor": {
+                  "type": "string"
+                },
+                "borderColor": {
                   "type": "string"
                 },
                 "createdAt": {
@@ -12191,6 +12254,15 @@
                       "type": "string"
                     },
                     "description": {
+                      "type": "string"
+                    },
+                    "color": {
+                      "type": "string"
+                    },
+                    "textColor": {
+                      "type": "string"
+                    },
+                    "borderColor": {
                       "type": "string"
                     },
                     "createdAt": {

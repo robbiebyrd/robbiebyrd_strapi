@@ -543,6 +543,10 @@ export interface ApiSkillTypeSkillType extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    borderColor: Schema.Attribute.String &
+      Schema.Attribute.CustomField<'plugin::color-picker.color'>;
+    color: Schema.Attribute.String &
+      Schema.Attribute.CustomField<'plugin::color-picker.color'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -557,6 +561,8 @@ export interface ApiSkillTypeSkillType extends Struct.CollectionTypeSchema {
     plural: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     sort: Schema.Attribute.Integer;
+    textColor: Schema.Attribute.String &
+      Schema.Attribute.CustomField<'plugin::color-picker.color'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
